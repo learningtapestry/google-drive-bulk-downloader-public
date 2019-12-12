@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Google Drive Bulk Downloader</title>
+  </head>
+
+  <body style="display: none">
+    <div class="container mx-auto pt-4 px-5 border border-top-0 c-container">
+      <h2 class="mb-4 d-inline-block">Google Drive Bulk Downloader - admin page</h2>
+
+      <div class="row c-link-creator">
+        <div class="col-7">
+          <div class="input-group">
+            <input type="text" value="https://drive.google.com/drive/folders/1_vr_WdtMVXBRyU_NMXZfemriEGUAzj5Z" class="form-control c-link-creator__source">
+
+            <div class="input-group-append">
+              <button type="button" class="btn btn-primary c-link-creator__create-link">Create link</button>
+            </div>
+          </div>
+
+          <input type="text" readonly class="mt-2 form-control c-link-creator__link-field">
+
+          <div class="mt-4 c-link-creator__message"></div>
+        </div>
+      </div>
+
+      <script src="https://apis.google.com/js/api.js"></script>
+      <script src="admin.js"></script>
+    </div>
+  </body>
+</html>
